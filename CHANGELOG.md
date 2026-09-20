@@ -10,6 +10,17 @@ once versioned releases begin.
 
 _Nothing yet. Future changes will be documented here._
 
+## [0.1.1] - 2026-09-20
+
+M6 auth-posture decision checkpoint. This entry records the authentication
+posture decided in devharness PR #31; it is a documentation-only change with
+no source code, build step, dependencies, or automated tests affected.
+
+### Added
+
+- M6 auth-posture decision record — API-key-first billing is the default,
+  with an adaptive OAuth posture, as decided in devharness PR #31.
+
 ## [0.1.0] - 2026-09-19
 
 Initial seam-test staging checkpoint. This commit captures the repository's
