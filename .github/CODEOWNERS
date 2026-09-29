@@ -10,3 +10,12 @@
 
 # Default owner for everything in the repo.
 * @quanticsoul4772
+
+# Explicit ownership rules. These are listed AFTER the catch-all rule above
+# because GitHub applies the LAST matching rule, so these take precedence.
+LICENSE @quanticsoul4772
+README.md @quanticsoul4772
+CONTRIBUTING.md @quanticsoul4772
+SECURITY.md @quanticsoul4772
+CHANGELOG.md @quanticsoul4772
+.github/ @quanticsoul4772
