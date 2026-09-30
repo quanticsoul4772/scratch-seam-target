@@ -1,0 +1,73 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in the sections below so we can reproduce and fix it.
+
+        Before submitting, please read [CONTRIBUTING.md](../blob/HEAD/CONTRIBUTING.md).
+        If you believe you have found a security vulnerability, do **not** open a public issue. Follow the instructions in [SECURITY.md](../blob/HEAD/SECURITY.md) instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Run command '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What actually happened instead.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Details about the environment where the bug occurred.
+      placeholder: |
+        - OS: (e.g. Windows 11, Ubuntu 24.04, macOS 14)
+        - Version/commit of this project: (e.g. v1.2.3)
+        - Runtime/tooling versions: (e.g. Node 20.11, Python 3.12)
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and screenshots
+      description: Paste relevant log output or drag in screenshots.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have searched existing issues and this bug has not already been reported.
+        - label: I have read the contributing guidelines.
